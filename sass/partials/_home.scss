@@ -1,0 +1,49 @@
+.maps {
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+
+
+
+
+
+
+.welcome {
+    padding-top: 55rem;
+    padding-bottom: 10rem;
+}
+
+.welcome__content {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: space-between;
+
+}
+
+.welcome__content-items {
+    width: 50%;
+}
+
+.welcome__p-sub-title {
+    color: $blue-secondary;
+    font-size: $typo-m;
+}
+
+.welcome__p-list {
+    list-style: circle;
+    margin-bottom: 4rem;
+
+    li {
+       margin-left: 4rem;
+    }
+}
+
+.welcome__a-social {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none inside;
+}

@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.menu__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+    padding-bottom: 8%;
+    gap: 1rem;
+    list-style: none inside;
+
+    a {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+}
+
+
+  
+  
