@@ -27,7 +27,8 @@ input {
     margin-right: auto;
     padding-bottom: 10rem;
     width: 80%;
-  display:flex;
+   display:flex;
+
   .col {
     flex:1;
     &:last-child {
@@ -35,27 +36,26 @@ input {
     }
   }
 }
-/* Accordion styles */
+
 .tabs {
   border-radius: 0.8rem;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
 }
+
 .tab {
   color: $white;
   overflow: hidden;
 
   p {
     color: $black;
+    margin: 0;
   }
 
-label {
+  label {
     font-size: $typo-m;
-}
+  }
 
-p {
-    margin: 0;
-}
 
   &-label {
     display: flex;
@@ -64,7 +64,7 @@ p {
     background: $midnight;
     font-weight: bold;
     cursor: pointer;
-    /* Icon */
+  
     &:hover {
       background: darken($midnight, 10%);
     }
@@ -76,6 +76,7 @@ p {
       transition: all .35s;
     }
   }
+
   &-content {
     max-height: 0;
     padding: 0 1em;
@@ -83,6 +84,7 @@ p {
     background: white;
     transition: all .35s;
   }
+
   &-close {
     display: flex;
     justify-content: flex-end;
@@ -96,7 +98,7 @@ p {
   }
 }
 
-// :checked
+
 input:checked {
   + .tab-label {
     background: darken($midnight, 10%);
