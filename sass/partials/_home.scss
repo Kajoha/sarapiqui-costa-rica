@@ -3,12 +3,6 @@
     padding-bottom: 10rem;
 }
 
-
-
-
-
-
-
 .welcome {
     padding-top: 55rem;
     padding-bottom: 10rem;
@@ -40,10 +34,31 @@
     }
 }
 
-.welcome__a-social {
+
+.welcome__a {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
     justify-content: center;
+}
+
+.welcome__a-muni {
+    gap: 2rem;
+    align-items: center;
+
+    img {
+        width: 8rem;
+    }
+}
+
+.welcome__a-social {
+    gap: 4rem;
     list-style: none inside;
+
+    i {
+        color: $white;
+    }
+    i:hover {
+        color: $blue-secondary;
+    }
+
 }

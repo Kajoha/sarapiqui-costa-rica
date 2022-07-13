@@ -1,0 +1,111 @@
+.sarapiqui__content-primary {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding-bottom: 4rem;
+
+    img {
+        width: 50%;
+    }
+    div {
+        width: 50%;
+    }
+}
+
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+
+.row {
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10rem;
+    width: 80%;
+  display:flex;
+  .col {
+    flex:1;
+    &:last-child {
+      margin-left: 1em;
+    }
+  }
+}
+/* Accordion styles */
+.tabs {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+}
+.tab {
+  color: $white;
+  overflow: hidden;
+
+  p {
+    color: $black;
+  }
+
+label {
+    font-size: $typo-m;
+}
+
+p {
+    margin: 0;
+}
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background: $midnight;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+    &::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: $midnight;
+    background: white;
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $midnight;
+    cursor: pointer;
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    background: darken($midnight, 10%);
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 200vh;
+    padding: 1em;
+  }
+}

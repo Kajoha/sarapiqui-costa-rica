@@ -1,0 +1,32 @@
+.footer {
+    margin-bottom: 5rem;
+    
+    ul {
+        color: $blue-secondary;
+        list-style: none inside;
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
+
+.footer__a {
+    gap: 3rem;
+    i {
+        color: $blue-secondary;
+    }
+    i:hover {
+        color: $white;
+    }
+
+    a {
+        color: $blue-secondary;
+    }
+    a:hover {
+        color: $white;
+    }
+
+
+}
