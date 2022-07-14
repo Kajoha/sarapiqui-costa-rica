@@ -4,20 +4,35 @@
 }
 
 .welcome {
-    padding-top: 55rem;
+    padding-top: 32rem;
     padding-bottom: 10rem;
+    @media (min-width: 30rem) {
+        padding-top: 42rem;
+     }
+     @media (min-width: 40rem) {
+        padding-top: 50rem;
+     }
+    @media (min-width: 70rem) {
+        padding-top: 55rem;
+     }
 }
 
 .welcome__content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5rem;
     justify-content: space-between;
+    
+    @media (min-width: 70rem) {
+        flex-direction: row;
+     }
 
 }
 
 .welcome__content-items {
-    width: 50%;
+    @media (min-width: 70rem) {
+        width: 50%;
+     }
 }
 
 .welcome__p-sub-title {

@@ -162,9 +162,16 @@ ul, li {
     text-transform: uppercase; }
 
 .slider {
-  padding-top: 4rem;
   display: inline-block;
-  margin-left: 17%; }
+  padding-top: 5rem; }
+  @media (min-width: 75rem) {
+    .slider {
+      margin-left: 15%;
+      padding-top: 4rem; } }
+  @media (min-width: 100rem) {
+    .slider {
+      margin-left: 28%;
+      padding-top: 4rem; } }
 
 .slider__display {
   list-style: none inside; }
@@ -205,12 +212,35 @@ ul.slider__display li:target {
   display: flex; }
 
 .nav__slider {
-  padding-top: 25rem;
-  padding-left: 5rem;
+  padding-top: 22rem;
+  padding-left: 13rem;
   align-self: flex-end;
   position: absolute;
   z-index: 9; }
+  @media (min-width: 15rem) {
+    .nav__slider {
+      padding-top: 12rem;
+      padding-left: 32%; } }
+  @media (min-width: 20rem) {
+    .nav__slider {
+      padding-top: 16rem;
+      padding-left: 32%; } }
+  @media (min-width: 25rem) {
+    .nav__slider {
+      padding-top: 18rem;
+      padding-left: 34%; } }
+  @media (min-width: 30rem) {
+    .nav__slider {
+      padding-top: 25rem;
+      padding-left: 34%; } }
   @media (min-width: 40rem) {
+    .nav__slider {
+      padding-top: 35rem;
+      padding-left: 40%; } }
+  @media (min-width: 50rem) {
+    .nav__slider {
+      padding-top: 48rem; } }
+  @media (min-width: 70rem) {
     .nav__slider {
       padding-top: 49rem;
       padding-left: 28%; } }
@@ -246,17 +276,30 @@ ul.nav__slider--menu li:first-child {
   padding-bottom: 10rem; }
 
 .welcome {
-  padding-top: 55rem;
+  padding-top: 32rem;
   padding-bottom: 10rem; }
+  @media (min-width: 30rem) {
+    .welcome {
+      padding-top: 42rem; } }
+  @media (min-width: 40rem) {
+    .welcome {
+      padding-top: 50rem; } }
+  @media (min-width: 70rem) {
+    .welcome {
+      padding-top: 55rem; } }
 
 .welcome__content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 5rem;
   justify-content: space-between; }
+  @media (min-width: 70rem) {
+    .welcome__content {
+      flex-direction: row; } }
 
-.welcome__content-items {
-  width: 50%; }
+@media (min-width: 70rem) {
+  .welcome__content-items {
+    width: 50%; } }
 
 .welcome__p-sub-title {
   color: #4982a2;
@@ -308,13 +351,16 @@ ul.nav__slider--menu li:first-child {
 
 .sarapiqui__content-primary {
   display: flex;
-  flex-direction: row;
-  gap: 5rem;
-  padding-bottom: 4rem; }
-  .sarapiqui__content-primary img {
-    width: 50%; }
-  .sarapiqui__content-primary div {
-    width: 50%; }
+  flex-direction: column; }
+  @media (min-width: 70rem) {
+    .sarapiqui__content-primary {
+      flex-direction: row;
+      gap: 5rem;
+      padding-bottom: 4rem; }
+      .sarapiqui__content-primary img {
+        width: 50%; }
+      .sarapiqui__content-primary div {
+        width: 50%; } }
 
 input {
   position: absolute;
@@ -325,14 +371,13 @@ input {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10rem;
-  width: 80%;
   display: flex; }
   .row .col {
     flex: 1; }
-    .row .col:last-child {
-      margin-left: 1em; }
+  @media (min-width: 70rem) {
+    .row {
+      width: 80%; } }
 
-/* Accordion styles */
 .tabs {
   border-radius: 0.8rem;
   overflow: hidden;
@@ -342,19 +387,20 @@ input {
   color: #dfd7d7;
   overflow: hidden; }
   .tab p {
-    color: #000000; }
+    color: #000000;
+    margin: 0; }
   .tab label {
     font-size: 1.8rem; }
-  .tab p {
-    margin: 0; }
   .tab-label {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1.4rem;
     background: #42943a;
     font-weight: bold;
-    cursor: pointer;
-    /* Icon */ }
+    cursor: pointer; }
+    @media (min-width: 70rem) {
+      .tab-label {
+        padding: 2em; } }
     .tab-label:hover {
       background: #326f2c; }
     .tab-label::after {
@@ -385,5 +431,24 @@ input:checked + .tab-label {
     transform: rotate(90deg); }
 
 input:checked ~ .tab-content {
-  max-height: 200vh;
+  max-height: 400vh;
   padding: 1em; }
+  @media (min-width: 70rem) {
+    input:checked ~ .tab-content {
+      max-height: 200vh; } }
+
+.tab__content-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem; }
+  .tab__content-items img {
+    width: 12rem;
+    height: 12rem; }
+  .tab__content-items ul {
+    color: #000000; }
+  @media (min-width: 70rem) {
+    .tab__content-items {
+      flex-direction: row; } }
