@@ -53,11 +53,12 @@
 .welcome__a {
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .welcome__a-muni {
+    justify-content: flex-start;
     gap: 2rem;
+    padding-bottom: 2rem;
     align-items: center;
 
     img {
@@ -76,4 +77,8 @@
         color: $blue-secondary;
     }
 
+}
+
+.welcome__a-social-justify {
+    justify-content: center;
 }

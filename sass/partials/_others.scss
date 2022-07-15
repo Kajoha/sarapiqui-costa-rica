@@ -1,0 +1,25 @@
+.activities__section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    justify-content: space-between;
+    gap: 4rem;
+
+    li {
+        line-height: 2;
+    }
+    
+    @media (min-width: 70rem) {
+        flex-direction: row;
+    }
+}
+
+.activities__section-items {
+    border: 0.2rem solid green;
+    border-radius: 5rem;
+    padding: 1rem 1rem 1rem 5rem;
+}
+
+.activities__title {
+    padding-bottom: 3rem;
+}
