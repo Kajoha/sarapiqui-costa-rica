@@ -145,3 +145,15 @@ align-items: center;
    flex-direction: row;
 }
 }
+
+.sarapiqui__content-primary-items {
+  h4 {
+    color: #b5e7b1;
+  }
+  li {
+    padding-bottom: 1rem;
+  }
+  a {
+    color: $blue-secondary;
+  }
+}

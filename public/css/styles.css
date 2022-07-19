@@ -52,6 +52,12 @@ h3 {
     h3 {
       font-size: 2.6rem; } }
 
+h4 {
+  font-size: 1.8rem; }
+  @media (min-width: 80rem) {
+    h4 {
+      font-size: 1.8rem; } }
+
 h1, h2 {
   text-transform: uppercase; }
 
@@ -457,6 +463,15 @@ input:checked ~ .tab-content {
     .tab__content-items {
       flex-direction: row; } }
 
+.sarapiqui__content-primary-items h4 {
+  color: #b5e7b1; }
+
+.sarapiqui__content-primary-items li {
+  padding-bottom: 1rem; }
+
+.sarapiqui__content-primary-items a {
+  color: #4982a2; }
+
 .activities__section {
   display: flex;
   flex-direction: column;
@@ -510,3 +525,6 @@ input:checked ~ .tab-content {
 @media (min-width: 70rem) {
   .asociados__content-right {
     width: 50%; } }
+
+.flora-fauna__content {
+  margin-bottom: 10rem; }

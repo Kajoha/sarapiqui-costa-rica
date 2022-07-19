@@ -57,6 +57,13 @@ h3 {
   }
 }
 
+h4 {
+  font-size: $typo-m;
+  @media (min-width: 80rem) {
+    font-size: $typo-m;
+  }
+}
+
 h1, h2 {
   text-transform: uppercase;
 }
