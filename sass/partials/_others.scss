@@ -23,3 +23,51 @@
 .activities__title {
     padding-bottom: 3rem;
 }
+
+.asociados__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-bottom: 10rem;
+    @media (min-width: 70rem) {
+        flex-direction: row;
+    }
+}
+
+.asociados__content-item {
+    h3 {
+        display: inline-block;
+        color: $blue-secondary;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $blue-secondary;
+    }
+}
+
+.asociados__content-item-descripcion {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+
+
+    @media (min-width: 70rem) {
+        flex-direction: row;
+
+        img {
+            width: 20%;
+        }
+    }
+}
+
+
+.asociados__content-left {
+    @media (min-width: 70rem) {
+      width: 50%;
+    }
+}
+
+.asociados__content-right {
+    @media (min-width: 70rem) {
+        width: 50%;
+      }
+}
