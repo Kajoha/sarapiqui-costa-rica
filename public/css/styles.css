@@ -528,3 +528,42 @@ input:checked ~ .tab-content {
 
 .flora-fauna__content {
   margin-bottom: 10rem; }
+
+.news {
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center; }
+
+.news__img {
+  border-radius: 50%;
+  width: 50%; }
+  @media (min-width: 70rem) {
+    .news__img {
+      width: 20%; } }
+
+.news__wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem; }
+  .news__wrapper:hover {
+    box-shadow: rgba(203, 199, 224, 0.15) 0px 48px 100px 0px;
+    border: 0.1rem solid #dfd7d7;
+    border-radius: 5px; }
+  @media (min-width: 70rem) {
+    .news__wrapper {
+      flex-direction: row;
+      gap: 3rem; }
+      .news__wrapper p {
+        width: 70%; } }
+
+.news__content-a {
+  margin-left: 70%;
+  color: #4982a2; }
+  .news__content-a:hover {
+    color: #dfd7d7;
+    border: 0.1rem solid #dfd7d7;
+    padding: 1rem;
+    border-radius: 5px; }
