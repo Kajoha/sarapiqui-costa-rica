@@ -123,3 +123,26 @@
         border-radius: 5px;
       }
 }
+
+.news-post__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    @media (min-width: 70rem) {
+        flex-direction: row;
+        gap: 3rem;
+      }
+}
+
+.news-post__content {
+    img {
+        width: 90%;
+    }
+    @media (min-width: 70rem) {
+       width: 50%;
+
+       img {
+        width: 100%;
+       }
+      }
+}
